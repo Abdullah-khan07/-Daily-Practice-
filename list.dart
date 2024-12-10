@@ -1,5 +1,5 @@
 void main() {
-  List<int> student = [45, 78, 12, 56, 15, 19];
-  student.add(99);
+  List<int> student = [55, 78, 12, 58, 17, 10];
+  student.insert(1, 89);
   print(student);
 }
