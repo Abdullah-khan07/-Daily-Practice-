@@ -1,12 +1,5 @@
 void main() {
-  Map student = {
-    "name ": "Abdullah",
-    "sec ": "b",
-    "Roll no": "46568",
-    "Class": "b",
-    "Hobbies": ["cricket ", "fotball"]
-  };
-  student["nothing"] = "abc";
-  student.putIfAbsent("Kasmir ", () => "pakistan");
+  Map student = {"name ": "Abdullah", "Roll no": 4589, "Sec": "B", "kasmir":"Archiyan"};
+  student.removeWhere((key, value) => value.StartWith("A"));
   print(student);
 }
