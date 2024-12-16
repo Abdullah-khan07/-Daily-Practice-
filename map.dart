@@ -1,7 +1,8 @@
 void main() {
-  List<Map<String, dynamic>> feriend = [
-    {"Location": "Karachi", "Name ": "Abdullah"},
-    {"Name": "Archiyan", "Location": "lahore"}
-  ];
-  print(feriend[1]["Location"]);
+  Map<String, dynamic> kasmir = {"Abdullah": 1, "Archiyan": 5};
+  if (kasmir.containsKey("Abdullah")) {
+    print("code is run");
+  } else {
+    print("code is not run");
+  }
 }
