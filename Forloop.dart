@@ -1,8 +1,9 @@
 import 'dart:io';
 
 void main() {
-  List studentnames = ["Abullah", "Huzifa", "Rizwan"];
-  for (var i = 0; i < studentnames.length; i++) {
-    print(studentnames[i]);
+  stdout.write("Enter the Number =");
+  num number = int.parse(stdin.readLineSync()!);
+  for (var i = 1; i <= 10; i++) {
+    print("$number x = $i ${number * i}");
   }
 }
