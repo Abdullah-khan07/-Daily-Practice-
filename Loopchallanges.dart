@@ -1,16 +1,15 @@
 void main() {
-  // // Calculate the sum of a list
-  List <int> number = [
-    4,
-    5,
-    1,
-    9,
-    7,
-    2,
-  ];
-  int sum = 1;
-  for ( int  number in number) {
-    sum += number;
-    print("sum $sum");
-  }
+  
+  // iterate over the map
+   Map<String, dynamic> person = {
+     "name": "Bilal",
+     "age": 22,
+     "isLogin": false
+   };
+ for (var i in person.keys) {
+     print(i);
+   }
+   for (var i in person.values) {
+    print(i);
+   }
 }
