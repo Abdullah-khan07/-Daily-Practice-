@@ -1,5 +1,4 @@
 import 'dart:io';
-
 void main() {
   stdout.write("Enter the Number =");
   num sum = num.parse(stdin.readLineSync()!);
