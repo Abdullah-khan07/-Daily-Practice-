@@ -1,15 +1,16 @@
 void main() {
-  // Bonus: Print only even numbers or only odd numbers.
-  List number = [4, 2, 9, 6, 1, 7, 5];
-  List evennumber = [];
-  List oddnumber = [];
-  for (var i = 0; i < number.length; i++) {
-    if (i % 2 == 0) {
-      evennumber.add(i);
-    } else {
-      oddnumber.add(i);
-    }
+  // // Calculate the sum of a list
+  List <int> number = [
+    4,
+    5,
+    1,
+    9,
+    7,
+    2,
+  ];
+  int sum = 1;
+  for ( int  number in number) {
+    sum += number;
+    print("sum $sum");
   }
-  print("Even Number $evennumber");
-  print("Odd Number $oddnumber");
 }
