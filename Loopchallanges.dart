@@ -1,15 +1,9 @@
 void main() {
-  
-  // iterate over the map
-   Map<String, dynamic> person = {
-     "name": "Bilal",
-     "age": 22,
-     "isLogin": false
-   };
- for (var i in person.keys) {
-     print(i);
-   }
-   for (var i in person.values) {
-    print(i);
-   }
+  // Calculate the sum of all elements in a list or array, e.g., [1, 2, 3, 4, 5].
+  List <int>number = [1, 2, 3, 4, 5];
+  int sum = 0;
+  for (var number in number) {
+    sum += number;
+  }
+  print("Sum: $sum");
 }
