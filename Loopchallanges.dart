@@ -1,6 +1,15 @@
 void main() {
-  // Print all numbers from 1 to 100.
-  for (var i = 1; i < 100; i++) {
-    print(i);
+  // Bonus: Print only even numbers or only odd numbers.
+  List number = [4, 2, 9, 6, 1, 7, 5];
+  List evennumber = [];
+  List oddnumber = [];
+  for (var i = 0; i < number.length; i++) {
+    if (i % 2 == 0) {
+      evennumber.add(i);
+    } else {
+      oddnumber.add(i);
+    }
   }
+  print("Even Number $evennumber");
+  print("Odd Number $oddnumber");
 }
