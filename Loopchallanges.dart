@@ -1,8 +1,10 @@
+import 'dart:io';
+
 void main() {
-  //Write a for loop to find the largest number in a list without using built-in functions.
-  for (var i = 1; i <= 200; i++) {
-    if (i % 2 == 0) ;
-    print(i);
+  //Generate the multiplication table for any number (e.g., 5 × 1 to 5 × 10).
+  stdout.write("Enter the number =");
+  num number = int.parse(stdin.readLineSync()!);
+  for (var i = 1; i <= 10; i++) {
+    print("$number x $i = ${number * i}");
   }
-  
 }
