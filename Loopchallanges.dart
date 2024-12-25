@@ -1,10 +1,15 @@
 import 'dart:io';
 
 void main() {
-  //Generate the multiplication table for any number (e.g., 5 × 1 to 5 × 10).
-  stdout.write("Enter the number =");
-  num number = int.parse(stdin.readLineSync()!);
-  for (var i = 1; i <= 10; i++) {
-    print("$number x $i = ${number * i}");
+  //Count Vowels
+  String text = "Dart programming language";
+  int vowelcount = 0;
+  String vowel = "aeiouAEIOU";
+  for (var i = 0; i < text.length; i++) {
+    if (vowel.contains(text[i])) ;
+    vowelcount++;
+
+    
   }
+    print("Number of vowels: $vowelcount");
 }
