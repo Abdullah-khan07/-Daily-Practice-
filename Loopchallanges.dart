@@ -1,15 +1,9 @@
-import 'dart:io';
+
 
 void main() {
-  //Count Vowels
-  String text = "Dart programming language";
-  int vowelcount = 0;
-  String vowel = "aeiouAEIOU";
-  for (var i = 0; i < text.length; i++) {
-    if (vowel.contains(text[i])) ;
-    vowelcount++;
-
-    
+  //Reverse Counting:
+//Print numbers from 10 to 1 in reverse order.
+  for (var i = 10; i >= 1; i--) {
+    print(i);
   }
-    print("Number of vowels: $vowelcount");
 }
