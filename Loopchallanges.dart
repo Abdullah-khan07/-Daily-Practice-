@@ -1,13 +1,9 @@
-import 'dart:io';
+void main (){
+  String str = "flutter";
+String reversed = "";
+for (int i = str.length - 1; i >= 0; i--) {
+  reversed += str[i];
+}
+print("Reversed String: $reversed");
 
-void main() {
-  stdout.write("Enter the Number =");
-  num sum = num.parse(stdin.readLineSync()!);
-  List evennumber = [];
-  List oddnumber = [];
-  if (sum % 2 == 0) {
-    print("Evennumber");
-  } else {
-    print("oddnumber");
-  }
 }
