@@ -1,14 +1,19 @@
 import 'dart:io';
 
 void main() {
-  String input = '';
-
-  while (input != 'exit') {
-    print('Type something (type "exit" to quit): ');
-    input = stdin.readLineSync()!; // User input lete hain
-    print('You typed: $input');
+  bool login = false;
+  while (login == false) {
+    stdout.write("Please input the email: ");
+    var email = stdin.readLineSync()!;
+    
+    stdout.write("Please input the password: ");
+    var password = stdin.readLineSync()!;
+    
+    if (email == "abdullah@gmail.com" && password == "5612") { // Removed the semicolon here
+      print("Login successful");
+      login = true;
+    } else {
+      print("Login failed");
+    }
   }
 }
-
-
-
